@@ -1,5 +1,3 @@
 #Password reset test
 #! /bin/bash
-USER=$1
-PASS=$2
-usermod --password $(echo $PASS | openssl passwd -1 -stdin) $USER
+usermod --password $(echo HDInsight@54321 | openssl passwd -1 -stdin) sshuser
